@@ -9,10 +9,48 @@
   <body>
     <h1 id="banner"><span id="my-name"></span>'s Awesome Animation</h1>
     <div id="p5-canvas"></div>
-    <!-- scripts -->
+    <div class="bouncingball"></div>
+    <div class="box"></div>
     <script src="lib/p5.min.js"></script>
     <script src="lib/p5.dom.min.js"></script>
     <script src="lib/p5.sound.min.js"></script>
-    <script src="example.js"></script>
+    <script src="script.js"></script>
+    <style>
+
+    div {
+    width: 100px;
+    height: 1300px;
+    background-color: whitesmoke;
+    position: relative; 
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes example {
+    0%   {background-color:palevioletred; left:0px; top:0px;}
+    25%  {background-color:skyblue; left:200px; top:0px;}
+    50%  {background-color:lightslategray; left:200px; top:200px;}
+    75%  {background-color:lightsalmon; left:0px; top:200px;}
+    100% {background-color:palevioletred; left:0px; top:0px;}
+    
+}
+        
+
+#p5-canvas {
+    height: 800px;
+    width: 808px;
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+
+}
+
+<div ng-app="myApp" ng-controller="MainCtrl">
+  <div class="container">
+    <input type="checkbox" ng-model="boxClass" />
+    <div class="box rotate" ng-class="{'box': boxClass, 'circle': !boxClass} "></div>
+  </div>
+        
+</div>
+</style>
   </body>
 </html>

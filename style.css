@@ -8,13 +8,131 @@ html {
 
 body {
   text-align: center;
+    height: 100%;
+  margin: 0;
+  position: relative;
+  background: #222;
+  font-family: "Open Sans";
+    
 }
 
-/* Add your styles below */
+body {
+  color:'white';
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+
+
+.box {
+  background: #2db34a;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  position: ;   
+  transition-timing-function: linear;
+  width: 95px;
+}
+.box:hover {
+  background: #ff7b29;
+  border-radius: 50%;
+    
+}
 
 #p5-canvas {
   margin: 10px auto;
   width: 810px;
   height: 610px;
-  border: 5px solid red;
+  border: 5px solid white;
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+}
+
+#banner {
+    color: white
+}
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: center;
+  overflow: hidden;
+}
+
+#wrap p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: rgba(255,255,255,.5);
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.ball {
+  pointer-events: center;
+  position: absolute; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: gray;
+  animation: implode 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: .5;
+}
+
+ @keyframes implode {
+  100% {transform: scale(0)}
+}
+
+.container {
+  text-align: center;
+}
+
+input[type='checkbox'] {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  margin: 20px;
+}
+
+.box {
+  margin: 20px auto;
+  background: #5FCF80;
+  width: 150px;
+  height: 150px;
+}
+
+.circle {
+  -webkit-transform: rotate(360deg);
+  background: #9351A6;
+  border-radius: 50%;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+}
+
+.rotate {
+  -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.bouncingball {
+  width:140px;
+  height:140px;
+  border-radius:100%;
+  background:#ccc;
+  animation: bounce 1s;
+
+  transform: translateY(20px);
+  animation-iteration-count: infinite;
+  position:absolute;
+  margin:10px;
+}
 }
