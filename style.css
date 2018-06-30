@@ -134,4 +134,7 @@ input[type='checkbox'] {
   position:absolute;
   margin:20px;
 }
+.music{
+    display:none;
+}
 }
