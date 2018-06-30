@@ -128,11 +128,10 @@ input[type='checkbox'] {
   height:140px;
   border-radius:100%;
   background:#ccc;
-  animation: bounce 1s;
-
+  animation: bounce s;
   transform: translateY(20px);
   animation-iteration-count: infinite;
   position:absolute;
-  margin:10px;
+  margin:20px;
 }
 }
